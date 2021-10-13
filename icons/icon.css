@@ -1,0 +1,29 @@
+#icon{
+    background-color: #EBF2FA;
+    height: 290px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#icon>img{
+    height: 40%;
+    position: relative;
+    left: 20%;
+    border-radius: 50%;
+}
+#details{
+    height: 150px;
+    width: 200px;
+    background-color: ivory;
+    padding-left: 10px;
+}
+#details>button{
+    background-color: #679436;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    position: relative;
+    left: 60px;
+    border-radius: 20px;
+}
