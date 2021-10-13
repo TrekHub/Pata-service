@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+.main,
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.main {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Header responsiveness */
+
+@media screen and (max-width: 1440px) {
+  .nav .nav-item {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .nav-logo h1 {
+    margin-top: 0;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+}
+
+/* Banner Responsiveness */
+@media screen and (max-width: 992px) {
+  .circular-bg,
+  .banner-img {
+    display: none;
+  }
+}
+/* end od media query */
+
+
+a {
+  text-decoration: none !important;
+  color: #2f2e41 !important;
+}
+
+.section-title h1 {
+  margin-top: 24px;
+  margin-bottom: 2px;
+  font-weight: 900;
+  font-size: 30px;
+  color: #2f2e41;
+  margin-bottom: 0px;
+}
+
+.section-title h1 {
+  margin-bottom: 2px;
+
+}
+.nav-logo a h1 {
+  font-size: 36px;
+  margin: 0%;
+}
+.line {
+  width: 100px;
+  margin: auto;
+  border-bottom: 5px solid #6cb840;
+}
+
+header {
+  padding: 20px 15px;
+  position: relative;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav .nav-item {
+  padding: 0 15px;
+  font-size: 19px;
+
+  font-weight: 600;
+}
+
+.nav-btn button {
+  padding: 10px 50px;
+  font-size: 17px;
+  border-radius: 50px;
+  border: none;
+  background: rgba(103, 148, 54, 1);
+  color: #fefefe;
+  font-weight: 550;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s linear;
+  outline: none;
+}
+
+/* Banner Section */
+
+.banner {
+  display: flex;
+  height: auto;
+  align-items: center;
+  padding-left: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner #info {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.banner-info h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #6cb840;
+  margin-bottom: 0px;
+}
+
+.banner-info h3 {
+  font-size: 35px;
+  color: #404040;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.banner-info p {
+  line-height: 33px;
+  margin-bottom: 8px;
+  font-size: 19px;
+}
+
+.circular-bg {
+  height: 900px;
+  width: 900px;
+
+  background-color: rgba(200, 210, 217, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  transform: translate(60px, -50%) rotate(-45deg);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.banner-img {
+  position: absolute;
+  transform: translateX(50%) translateX(60%);
+  right: 60%;
+  top: 20%;
+}
+
+#info-btns {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HOW IT WORKS SECTION */
+
+.how-it-works {
+  background-color: rgba(66, 122, 161, 0.02);
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.how-info {
+  width: 70%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.how-info p {
+  line-height: 33px;
+
+  font-size: 19px;
+}
+
+.how-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  padding: 30px 0;
+}
+
+.main-card {
+  height: 340px;
+  width: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s linear;
+}
+
+.card-image {
+  position: absolute;
+  top: -50px;
+  height: 120px;
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.card-info {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-info h2 {
+  margin-top: 40px;
+  color: #2f2e41;
+}
+
+/* WHY US SECTION */
+
+.why-us {
+  width: 100%;
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow-y: hidden;
+  
+}
+
+.why {
+  padding: 40px;
+}
+
+.green-bg {
+  height: 700px;
+  width: 800px;
+  border-radius: 50%;
+  background-color: #6cb840;
+  position: absolute;
+  left: -200px;
+  top: 20%;
+}
+
+.why-img {
+  position: absolute;
+  left: -1%;
+  top: 20%;
+}
+
+.why-info {
+  margin: 30px;
+  width: 50%;
+  right: 10%;
+  text-align: center;
+}
+
+.why-info p {
+  margin: 10px 0;
+  line-height: 33px;
+  font-size: 19px;
+}
+
+.row {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  
+}
+
+/* CONTACT SECTION */
+
+.contact-us {
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  background-color: rgba(66, 122, 161, 0.02);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-us p {
+  width: 50%;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 33px;
+  font-size: 19px;
+}
+
+#search {
+  width: 40%;
+  
+  padding: 5px;
+  padding-left: 10px;
+  margin: 30px 0;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 20px;
+  outline: none;
+  border: 3px solid rgba(47, 46, 65, 1);
+}
+
+
+/* FOOTER */
+
+header {
+  height: auto;
+  width: 100%;
+ 
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  align-items: flex-start;
+  text-align: center;
+  background-color: rgba(178, 196, 159, 1);
+}
+.quick {
+  list-style: none;
+  font-size: 19px;
+ 
+}
+.quick-item {
+  color: #2F2E41;
+  margin: 10px;
+}
+.Address p , .newsletter p {
+  color: #2F2E41;
+  font-weight: 550;
+ 
+}
+.newsletter p{
+  width: 60%;
+  margin: auto;
+}
+.footer-btn input {
+  width: 50%;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 30px 0;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 10px;
+  outline: none;
+  border: 3px solid rgba(47, 46, 65, 1); 
+}
+.footer-btn button {
+  padding: 16px 50px;
+  font-size: 12px;
+  border-radius: 50px;
+  border: none;
+  background: rgba(103, 148, 54, 1);
+  color: #fefefe;
+  font-weight: 550;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s linear;
+  outline: none;
+}
+.copyright {
+  background-color: rgba(178, 196, 159, 1);
+}
+.copyright p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
