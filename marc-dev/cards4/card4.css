@@ -27,3 +27,12 @@ body{
     bottom: 490px;
     font-size: larger;
 }
+@media(max-width:700px){
+    #PP{
+        height: 30%;
+        top: 35%;  
+    }
+    #user-info{
+        left: 40%;
+    }
+}

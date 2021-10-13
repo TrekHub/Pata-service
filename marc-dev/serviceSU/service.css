@@ -18,12 +18,16 @@ body{
     border-radius: 60%;
     right: 25%;
 }
+
 @media(max-width:700px){
     #eclipse{
         height: 30%;
     }
     #content{
-        font-size: medium;
+        font-weight: 200;
+    }
+    #banner{
+        padding: 15px;
     }
     
 }

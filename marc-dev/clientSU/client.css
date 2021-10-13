@@ -22,9 +22,14 @@ body{
     #eclipse{
         height: 30%;
     }
+    #content{
+        font-weight: 200;
+    }
+    #banner{
+        padding: 15px;
+    }
     
 }
-
 #banner>h2 {
     position: inherit;
     top: 30%;
