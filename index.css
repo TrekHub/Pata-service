@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(162, 166, 170);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    border: 9px;
+  }
+  
+  
+  input[type=text], input[type=password] {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 15px ;
+    display: inline-block;
+    border: 1px solid chartreuse;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+  
+
+  label{
+      font-size: 20px;
+  }
+
+  .text{
+      font-size: 30px;
+  }
+ 
+  button {
+    background-color: #065739;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor:pointer;
+    width: 30%;
+    align-content: center;
+    border-radius: 12px;
+  }
+  .container  {
+    padding: 170px;
+    position:relative; 
+    left:300px; 
+    top:2px;
+    background-color: rgb(252, 247, 247);
+    width: 30%;
+  }
+
+
+h1{
+    height: 10em;          
+    margin: 0;
+    position: absolute;             
+    top: 50%;                         
+    left:50px;
+    margin-top: 0px;
+}
+
