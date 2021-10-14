@@ -2,367 +2,359 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pata service</title>
-  <link rel="stylesheet" href="platform.css" />
-  <link rel="stylesheet" href="../card/card.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pata service</title>
+    <link rel="stylesheet" href="platform.css" />
+    <link rel="stylesheet" href="../card/card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-  <div id="main">
-    <header>
-      <div class="nav-bar">
-        <div class="nav-logo">
-          <a href="#" class="inactive">
-            <h1>Pata Service</h1>
-          </a>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li>
-              <a href="../index.html" class="active" id="home">Home</a>
-            </li>
-            <li>
-              <a href="#featured" id="featured">Featured</a>
-            </li>
-            <li>
-              <a href="#featured" id="products">find Me</a>
-            </li>
-          </ul>
-        </div>
+    <div id="main">
+        <header>
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <a href="#" class="inactive">
+                        <h1>Pata Service</h1>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="active" id="home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#featured" id="featured">Featured</a>
+                        </li>
+                        <li>
+                            <a href="#featured" id="products">find Me</a>
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="nav-icons">
-          
-          <i id="search" class="fa fa-search" aria-hidden="true"></i>
-          <i class="fa fa-user" aria-hidden="true"></i>
-        </div>
-        <!-- Display only profile icon on small screens -->
-        <div class="nav-profile">
-          <i class="fa fa-user" aria-hidden="true"></i>
-        </div>
-      </div>
-    </header>
-    <div class="content">
-      <div class="side-bar">
-        <div class="cat-title">
-          <h3>Categories</h3>
-        </div>
+                <div class="nav-icons">
 
-        <div class="categories">
-          <form class="form" action=" ">
-
-            <div>
-            <input type="checkbox" id="plumber" value="plumber" />
-            <label> Plumber</label><br /> <br>
+                    <i id="search" class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <!-- Display only profile icon on small screens -->
+                <div class="nav-profile">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
             </div>
-           
-            <div>
-              <input type="checkbox" id="Electrician"  value="Electrician" />
-              <label >Electrician</label><br /> <br>
+        </header>
+        <div class="content">
+            <div class="side-bar">
+                <div class="cat-title">
+                    <h3>Categories</h3>
+                </div>
+
+                <div class="categories">
+                    <form class="form" action=" ">
+
+                        <div>
+                            <input type="checkbox" id="plumber" value="plumber" />
+                            <label data-filter="plumber"> Plumber</label><br /> <br>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="Electrician" value="Electrician" />
+                            <label>Electrician</label><br /> <br>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="Barber" value="Barber" />
+                            <label>Barber</label><br /><br />
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="Mechanic" value="Mechanic" />
+                            <label> Mechanic</label><br /><br />
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="HairDresser" value="HairDresser" />
+                            <label> Hair Dresser</label><br /><br />
+                        </div>
+
+                    </form>
+                </div>
             </div>
+            <div class="main-body">
 
-           <div>
-            <input type="checkbox" id="Barber"  value="Barber" />
-            <label >Barber</label><br /><br />
-           </div>
+                <div id="search-section" class="search-section">
+                    <input type="text" class="search" placeholder="Search For A Service" />
 
-           <div>
-            <input type="checkbox" id="Mechanic"  value="Mechanic" />
-            <label> Mechanic</label><br /><br />
-           </div>
+                    <div class="nav-btn">
+                        <button>Send</button>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="mojito">Pata Service</div>
+                </div>
 
-           <div>
-            <input type="checkbox" id="HairDresser"  value="HairDresser" />
-            <label > Hair Dresser</label><br /><br />
-           </div>
+                <div class="fab-container">
+                    <div class="fab fab-icon-holder bg-black">
+                        <i class="fas fa-add"></i>
+                    </div>
+                    <ul class="fab-options">
+                        <li>
+                            <div class="fab-icon-holder bg-info">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fab-icon-holder bg-success">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalogue">
+                    <div class="products">
+                        <div class="card">
+                            <div class="product-tumb">
+                                <img src="./images/woman.png" alt="" />
+                            </div>
+                            <div class="product-details">
+                                <div class="span">
+                                    <span class="product-category">Plumber</span>
+                                    <span class="product-category">Rongai</span>
+                                </div>
 
-          </form>
+                                <h4><a>Teddy Omondi</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!
+                                </p>
+                                <div class="product-bottom-details">
+                                    <div class="product-price">
+                                        <button class="reach-btn btn">Reach Out</button>
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card plumber">
+                            <div class="product-tumb">
+                                <img src="./images/woman.png" alt="" />
+                            </div>
+                            <div class="product-details">
+                                <div class="span">
+                                    <span class="product-category">Plumber</span>
+                                    <span class="product-category">Rongai</span>
+                                </div>
+
+                                <h4><a>Teddy Omondi</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!
+                                </p>
+                                <div class="product-bottom-details">
+                                    <div class="product-price">
+                                        <button class="reach-btn btn">Reach Out</button>
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="product-tumb">
+                                <img src="./images/woman.png" alt="" />
+                            </div>
+                            <div class="product-details">
+                                <div class="span">
+                                    <span class="product-category" id="plumber">Plumber</span>
+                                    <span class="product-category">Rongai</span>
+                                </div>
+
+                                <h4><a>Teddy Omondi</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!
+                                </p>
+                                <div class="product-bottom-details">
+                                    <div class="product-price">
+                                        <button class="reach-btn btn">Reach Out</button>
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="hairdresser">
+                            <div class="product-tumb">
+                                <img src="./images/woman.png" alt="" />
+                            </div>
+                            <div class="product-details">
+                                <div class="span">
+                                    <span class="product-category">Plumber</span>
+                                    <span class="product-category">Rongai</span>
+                                </div>
+
+                                <h4><a>Teddy Omondi</a></h4>
+                                <p>card Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!
+                                </p>
+                                <div class="product-bottom-details">
+                                    <div class="product-price">
+                                        <button class="reach-btn btn">Reach Out</button>
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="product-tumb">
+                                <img src="./images/woman.png" alt="" />
+                            </div>
+                            <div class="product-details">
+                                <div class="span">
+                                    <span class="product-category">Plumber</span>
+                                    <span class="product-category">Rongai</span>
+                                </div>
+
+                                <h4><a>Teddy Omondi</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!
+                                </p>
+                                <div class="product-bottom-details">
+                                    <div class="product-price">
+                                        <button class="reach-btn btn">Reach Out</button>
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="product-tumb">
+                                <img src="./images/woman.png" alt="" />
+                            </div>
+                            <div class="product-details">
+                                <div class="span">
+                                    <span class="product-category">Plumber</span>
+                                    <span class="product-category">Rongai</span>
+                                </div>
+
+                                <h4><a>Teddy Omondi</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!
+                                </p>
+                                <div class="product-bottom-details">
+                                    <div class="product-price">
+                                        <button class="reach-btn btn">Reach Out</button>
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="product-tumb">
+                                <img src="./images/woman.png" alt="" />
+                            </div>
+                            <div class="product-details">
+                                <div class="span">
+                                    <span class="product-category">Plumber</span>
+                                    <span class="product-category">Rongai</span>
+                                </div>
+
+                                <h4><a>Teddy Omondi</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!
+                                </p>
+                                <div class="product-bottom-details">
+                                    <div class="product-price">
+                                        <button class="reach-btn btn">Reach Out</button>
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="product-tumb">
+                                <img src="./images/woman.png" alt="" />
+                            </div>
+                            <div class="product-details">
+                                <div class="span">
+                                    <span class="product-category">Plumber</span>
+                                    <span class="product-category">Rongai</span>
+                                </div>
+
+                                <h4><a>Teddy Omondi</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!
+                                </p>
+                                <div class="product-bottom-details">
+                                    <div class="product-price">
+                                        <button class="reach-btn btn">Reach Out</button>
+                                    </div>
+                                    <div class="product-links">
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- modal -->
+
+                        <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+
+                                <div class="modal-content-left">
+                                    <img src="../images/woman.png" alt="unsplash daily picture">
+                                </div>
+                                <!-- end modal content left -->
+
+                                <div class="modal-content-right">
+
+                                    <div class="modal-header">
+                                        <p>Hello.</p>
+                                        <span class="close">&times;</span>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
+                                        <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <p>Consectetur adipisicing elit. Omnis, repellat! Laboriosam voluptate laudantium doloremque quo mollitia maiores ex veritatis sit expedita hic ipsum.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END the modal -->
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="main-body">
-
-        <div  id="search-section"  class="search-section">
-          <input type="text" class="search" placeholder="Search For A Service" />
-
-          <div  class="nav-btn">
-            <button>Send</button>
-          </div>
-        </div>
-        <div class="banner">
-          <div class="mojito">Pata Service</div>
-        </div>
-
-        <div class="fab-container">
-          <div class="fab fab-icon-holder bg-black">
-            <i class="fas fa-add"></i>
-          </div>
-          <ul class="fab-options">
-            <li>
-              <div class="fab-icon-holder bg-info">
-                <i class="fas fa-wallet"></i>
-              </div>
-            </li>
-            <li>
-              <div class="fab-icon-holder bg-success">
-                <i class="fas fa-shopping-bag"></i>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="catalogue">
-          <div class="products">
-            <div class="card" >
-              <div class="product-tumb">
-                <img src="./images/woman.png" alt="" />
-              </div>
-              <div class="product-details">
-                <div class="span">
-                  <span class="product-category">Plumber</span>
-                  <span class="product-category">Rongai</span>
-                </div>
-
-                <h4><a >Teddy Omondi</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Vero, possimus nostrum!
-                </p>
-                <div class="product-bottom-details">
-                  <div class="product-price">
-                    <button class="reach-btn btn">Reach Out</button>
-                  </div>
-                  <div class="product-links">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" >
-              <div class="product-tumb">
-                <img src="./images/woman.png" alt="" />
-              </div>
-              <div class="product-details">
-                <div class="span">
-                  <span class="product-category">Plumber</span>
-                  <span class="product-category">Rongai</span>
-                </div>
-
-                <h4><a >Teddy Omondi</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Vero, possimus nostrum!
-                </p>
-                <div class="product-bottom-details">
-                  <div class="product-price">
-                    <button class="reach-btn btn">Reach Out</button>
-                  </div>
-                  <div class="product-links">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" >
-              <div class="product-tumb">
-                <img src="./images/woman.png" alt="" />
-              </div>
-              <div class="product-details">
-                <div class="span">
-                  <span class="product-category">Plumber</span>
-                  <span class="product-category">Rongai</span>
-                </div>
-
-                <h4><a >Teddy Omondi</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Vero, possimus nostrum!
-                </p>
-                <div class="product-bottom-details">
-                  <div class="product-price">
-                    <button class="reach-btn btn">Reach Out</button>
-                  </div>
-                  <div class="product-links">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card" >
-              <div class="product-tumb">
-                <img src="./images/woman.png" alt="" />
-              </div>
-              <div class="product-details">
-                <div class="span">
-                  <span class="product-category">Plumber</span>
-                  <span class="product-category">Rongai</span>
-                </div>
-
-                <h4><a >Teddy Omondi</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Vero, possimus nostrum!
-                </p>
-                <div class="product-bottom-details">
-                  <div class="product-price">
-                    <button class="reach-btn btn">Reach Out</button>
-                  </div>
-                  <div class="product-links">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card" >
-              <div class="product-tumb">
-                <img src="./images/woman.png" alt="" />
-              </div>
-              <div class="product-details">
-                <div class="span">
-                  <span class="product-category">Plumber</span>
-                  <span class="product-category">Rongai</span>
-                </div>
-
-                <h4><a >Teddy Omondi</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Vero, possimus nostrum!
-                </p>
-                <div class="product-bottom-details">
-                  <div class="product-price">
-                    <button class="reach-btn btn">Reach Out</button>
-                  </div>
-                  <div class="product-links">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card" >
-              <div class="product-tumb">
-                <img src="./images/woman.png" alt="" />
-              </div>
-              <div class="product-details">
-                <div class="span">
-                  <span class="product-category">Plumber</span>
-                  <span class="product-category">Rongai</span>
-                </div>
-
-                <h4><a >Teddy Omondi</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Vero, possimus nostrum!
-                </p>
-                <div class="product-bottom-details">
-                  <div class="product-price">
-                    <button class="reach-btn btn">Reach Out</button>
-                  </div>
-                  <div class="product-links">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" >
-              <div class="product-tumb">
-                <img src="./images/woman.png" alt="" />
-              </div>
-              <div class="product-details">
-                <div class="span">
-                  <span class="product-category">Plumber</span>
-                  <span class="product-category">Rongai</span>
-                </div>
-
-                <h4><a >Teddy Omondi</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Vero, possimus nostrum!
-                </p>
-                <div class="product-bottom-details">
-                  <div class="product-price">
-                    <button class="reach-btn btn">Reach Out</button>
-                  </div>
-                  <div class="product-links">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" >
-              <div class="product-tumb">
-                <img src="./images/woman.png" alt="" />
-              </div>
-              <div class="product-details">
-                <div class="span">
-                  <span class="product-category">Plumber</span>
-                  <span class="product-category">Rongai</span>
-                </div>
-
-                <h4><a >Teddy Omondi</a></h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Vero, possimus nostrum!
-                </p>
-                <div class="product-bottom-details">
-                  <div class="product-price">
-                    <button class="reach-btn btn">Reach Out</button>
-                  </div>
-                  <div class="product-links">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- modal -->
-
-            <div id="myModal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-            
-                <div class="modal-content-left">
-                  <img src="../images/woman.png" alt="unsplash daily picture">
-                </div><!-- end modal content left -->
-            
-                <div class="modal-content-right">
-            
-                  <div class="modal-header">
-                    <p>Hello.</p>
-                    <span class="close">&times;</span>
-                  </div>
-            
-                  <div class="modal-body">
-                    <p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
-                    <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>
-                  </div>
-            
-                  <div class="modal-footer">
-                    <p>Consectetur adipisicing elit. Omnis, repellat! Laboriosam voluptate laudantium doloremque quo mollitia maiores ex veritatis sit expedita hic ipsum.</p>
-                  </div>
-            
-                </div>
-              </div>
-            </div><!-- END the modal -->
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
 
-  <script src="search.js"></script>
-  <script src="../card/card.js"></script>
-  
+    <script src="search.js"></script>
+    <script src="../card/card.js"></script>
+
 </body>
 
 </html>
