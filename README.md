@@ -44,7 +44,7 @@ npm init ``
 Here is a live link to the project 
 
 
-https://trekhub.github.io/street-food/
+https://adoring-carson-26eaa9.netlify.app/index.html
 
 ![alt text](pata.png)
 
