@@ -36,7 +36,9 @@ html {
 header {
     height: auto;
     width: 100%;
+    
 }
+
 
 .content {
     display: flex;
@@ -104,10 +106,16 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+.nav-logo {
+    margin-left: 40px;
+}
 .nav-logo a {
     text-decoration: none;
     color: black;
+
+}
+.nav-logo a h1 {
+    font-size: 34px;
 }
 
 .nav-links li {
@@ -119,8 +127,11 @@ header {
 .nav-links li a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
-
+.nav-icons {
+    margin-right: 40px;
+}
 .nav-icons i {
     font-size: 24px;
     margin: 0 20px;
@@ -135,7 +146,7 @@ header {
     width: 80%;
     margin: auto;
     display: none;
-    justify-content: space-around;
+    justify-content: space-bet;
     align-items: center;
     margin: 30px 0;
 }
